@@ -7,7 +7,7 @@ const generateRandomInteger =(max)=>{
 
 
 const server = http.createServer((req,res)=>{
-    if(req.url==='/quotes'){
+    if(req.url === '/quotes'){
         fs.readFile("quotesWithAuthors.json","utf8",(err,data)=>{
             if(err){
                 console.log(err);
