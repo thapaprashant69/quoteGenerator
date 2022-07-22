@@ -3,7 +3,7 @@
 
     const fetchData = async()=>{
         try{
-        const res = await fetch("http://localhost:5000/quotes");
+        const res = await fetch("http://localhost:8000/quotes");
         const data = await res.json();
         heading.innerText = data.text;
         author.innerText = data.author;
